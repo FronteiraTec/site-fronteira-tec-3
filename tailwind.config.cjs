@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'orange-waves': "url('./fundoMembros.png')"
+        'orange-waves': "url('./fundoMembros.png')",
+        'fronteira-tec1': "url('./bgFronteiraTEC1.png')",
+        'fronteira-tec2': "url('./bgFronteiraTEC2.png')",
+        'fronteira-tec3': "url('./bgFronteiraTEC3.png')"
       },
       backgroundColor: {
         'white-fronteira': '#F5F5F5'
@@ -15,5 +18,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('flowbite/plugin')]
+  plugins: [require('tw-elements/dist/plugin')]
 }

@@ -15,22 +15,25 @@ export function Navbar() {
   return (
     <Popover>
       <nav
-        className="relative flex items-center justify-between lg:justify-between ml-5 mr-5"
+        className="relative flex items-center justify-between top-5 z-10"
         aria-label="Global"
       >
         <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
           <div className="flex w-full items-center justify-between md:w-auto">
             <a href="/">
               <img
-                className="w-auto h-28"
+                className="w-auto lg:h-28 h-16"
                 src={logomarcaFronteiraTec}
                 alt="Logomarca Fronteira Tec, com um F no meio de vários circulos."
               />
             </a>
 
             <div className="-mr-2 flex items-center md:hidden">
-              <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-neutral-800 hover:text-white focus:outline-none focus:none">
-                <Bars3Icon className="h-10 w-10" aria-hidden="true" />
+              <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:text-gray-400 focus:outline-none focus:none">
+                <Bars3Icon
+                  className="lg:h-10 lg:w-10 h-7 w-7 mr-10"
+                  aria-hidden="true"
+                />
               </Popover.Button>
             </div>
           </div>
@@ -40,7 +43,7 @@ export function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="font-semibold text-gray-400 text-[20px] hover:font-bold hover:text-gray-50"
+              className="font-semibold text-gray-400 text-[17px] hover:font-bold hover:text-gray-50"
             >
               {item.name}
             </a>

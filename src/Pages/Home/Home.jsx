@@ -3,31 +3,17 @@ import iconFronteiraTec from '../../Assets/Logomarca/iconFronteiraTec.png'
 import hexagonoLaranja from '../../Assets/hexagonoLaranja.png'
 import hexagonoVerde from '../../Assets/hexagonoVerde.png'
 import { AnimatedOnScroll } from 'react-animated-css-onscroll'
+import { Carousel } from '../../Components/Carousel/Carousel'
 
 export function Home() {
   const Page = props => {
     const { children, ...rest } = props
-    return (
-      <div {...rest} className="page">
-        {children}
-      </div>
-    )
+    return <div {...rest}>{children}</div>
   }
   return (
     <Main>
       <div>
-        <div className="lg:mt-[100px] lg:mr-[100px] m-5 text-white lg:text-end text-center">
-          <div className="lg:flex lg:justify-end">
-            <h1 className="lg:text-5xl text-xl font-normal lg:w-96">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h1>
-          </div>
-          <div>
-            <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
-              Saiba Mais<span className="ml-3">{'>'}</span>
-            </button>
-          </div>
-        </div>
+        <Carousel />
       </div>
 
       <div id="AboutUs" className="bg-white-fronteira sm:p-[50px] pb-10">
