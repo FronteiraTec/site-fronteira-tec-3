@@ -11,7 +11,10 @@
   "dependencies": {
     "@headlessui/react": "^1.7.1",
     "@heroicons/react": "^2.0.11",
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.1.11",
     "react": "^18.2.0",
+    "react-animated-css-onscroll": "^1.2.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0"
   },

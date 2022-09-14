@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import LogomarcaFronteiraTec from '../../Assets/Logomarca/LogoFronteiraTEC.png'
+import logomarcaFronteiraTec from '../../Assets/Logomarca/logoFronteiraTEC.png'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -23,7 +23,7 @@ export function Navbar() {
             <a href="/">
               <img
                 className="w-auto h-28"
-                src={LogomarcaFronteiraTec}
+                src={logomarcaFronteiraTec}
                 alt="Logomarca Fronteira Tec, com um F no meio de vários circulos."
               />
             </a>
