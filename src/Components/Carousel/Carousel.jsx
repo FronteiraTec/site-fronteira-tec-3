@@ -43,7 +43,7 @@ export function Carousel() {
           </div>
         </div>
 
-        <div className="carousel-item active relative float-left w-full bg-fronteira-tec2 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
+        <div className="carousel-item relative float-left w-full bg-fronteira-tec2 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
           <div className="mt-[200px] lg:mr-[100px] m-5 text-white lg:text-start text-center lg:ml-10">
             <div className="flex justify-start">
               <h1 className="lg:text-5xl text-3xl font-normal lg:w-96">
@@ -58,7 +58,7 @@ export function Carousel() {
           </div>
         </div>
 
-        <div className="carousel-item active relative float-left w-full bg-fronteira-tec3 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
+        <div className="carousel-item relative float-left w-full bg-fronteira-tec3 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
           <div className="mt-[200px] lg:mr-[100px] m-5 text-white text-center lg:ml-10">
             <div className="flex justify-center">
               <h1 className="lg:text-5xl text-3xl font-normal lg:w-96">
