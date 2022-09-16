@@ -1,4 +1,3 @@
-import 'tw-elements'
 import { AnimatedOnScroll } from 'react-animated-css-onscroll'
 
 export function Carousel() {
@@ -43,7 +42,7 @@ export function Carousel() {
             </div>
             <div>
               <AnimatedOnScroll animationIn="zoomInUp">
-                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
+                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-150">
                   Saiba Mais<span className="ml-3">{'>'}</span>
                 </button>
               </AnimatedOnScroll>

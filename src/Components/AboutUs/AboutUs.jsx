@@ -72,7 +72,7 @@ export function AboutUs() {
 
       <AnimatedOnScroll animationIn="zoomInUp">
         <div className="mt-5 flex items-center justify-center pl-5 pr-5">
-          <div className="rounded-md bg-gradient-to-r from-orange-fronteira to-green-fronteira p-[2px] w-96 cursor-pointer group hover:scale-110 duration-100">
+          <div className="rounded-md bg-gradient-to-r from-orange-fronteira to-green-fronteira p-[2px] w-96 cursor-pointer group hover:scale-110 duration-150">
             <div className="flex h-full w-full items-center justify-center bg-white-fronteira back p-3 group-hover:bg-gradient-to-r from-orange-fronteira to-green-fronteira group-hover:text-white group-hover:font-bold">
               <h1>Saiba mais</h1>
             </div>

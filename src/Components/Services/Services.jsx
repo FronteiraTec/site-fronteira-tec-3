@@ -66,6 +66,13 @@ export function Services() {
           </AnimatedOnScroll>
         </div>
       </div>
+      <div className="w-60 m-auto">
+        <AnimatedOnScroll animationIn="tada">
+          <button className="w-full px-2 py-5 mt-6 text-md font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 hover:scale-110 duration-150 rounded-md">
+            Encontre em Contato {'>'}
+          </button>
+        </AnimatedOnScroll>
+      </div>
     </div>
   )
 }

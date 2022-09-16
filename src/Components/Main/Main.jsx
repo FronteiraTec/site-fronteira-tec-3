@@ -6,7 +6,7 @@ export function Main(props) {
       <header className="h-0">
         <Navbar />
       </header>
-      <main>{props.children}</main>
+      <main className="bg-white-fronteira">{props.children}</main>
     </body>
   )
 }
