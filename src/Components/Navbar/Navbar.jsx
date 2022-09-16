@@ -2,9 +2,10 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logomarcaFronteiraTec from '../../Assets/Logomarca/logoFronteiraTEC.png'
+import { AnimatedOnScroll } from 'react-animated-css-onscroll'
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '#Home' },
   { name: 'Sobre nós', href: '#AboutUs' },
   { name: 'Serviços', href: '#Services' },
   { name: 'Membros', href: '#Members' },
@@ -20,12 +21,14 @@ export function Navbar() {
       >
         <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
           <div className="flex w-full items-center justify-between md:w-auto">
-            <a href="/">
-              <img
-                className="w-auto lg:h-28 h-16"
-                src={logomarcaFronteiraTec}
-                alt="Logomarca Fronteira Tec, com um F no meio de vários circulos."
-              />
+            <a href="#Home">
+              <AnimatedOnScroll animationIn="rollIn">
+                <img
+                  className="w-auto lg:h-28 h-16"
+                  src={logomarcaFronteiraTec}
+                  alt="Logomarca Fronteira Tec, com um F no meio de vários circulos."
+                />
+              </AnimatedOnScroll>
             </a>
 
             <div className="-mr-2 flex items-center md:hidden">

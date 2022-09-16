@@ -1,4 +1,5 @@
 import 'tw-elements'
+import { AnimatedOnScroll } from 'react-animated-css-onscroll'
 
 export function Carousel() {
   return (
@@ -28,47 +29,66 @@ export function Carousel() {
       </div>
 
       <div className="carousel-inner relative w-full overflow-hidden">
-        <div className="carousel-item active relative float-left w-full bg-fronteira-tec1 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
-          <div className="mt-[200px] lg:mr-[100px] m-5 text-white lg:text-end text-center">
+        <div className="carousel-item active relative float-left w-full bg-fronteira-tec1 bg-cover bg-no-repeat h-screen">
+          <div className="mt-[350px] lg:mr-[100px] m-5 text-white lg:text-end text-center">
             <div className="flex justify-end">
-              <h1 className="lg:text-5xl text-3xl font-normal lg:w-96">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h1>
+              <AnimatedOnScroll animationIn="zoomInRight">
+                <h1 className="lg:text-5xl text-3xl font-normal lg:w-96 sm:text-end text-center">
+                  Nosso{' '}
+                  <span className="font-bold">Desenvolvimento cresce </span> o
+                  seu
+                  <span className="font-bold"> Negócio</span>
+                </h1>
+              </AnimatedOnScroll>
             </div>
             <div>
-              <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
-                Saiba Mais<span className="ml-3">{'>'}</span>
-              </button>
+              <AnimatedOnScroll animationIn="zoomInUp">
+                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
+                  Saiba Mais<span className="ml-3">{'>'}</span>
+                </button>
+              </AnimatedOnScroll>
             </div>
           </div>
         </div>
 
-        <div className="carousel-item relative float-left w-full bg-fronteira-tec2 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
-          <div className="mt-[200px] lg:mr-[100px] m-5 text-white lg:text-start text-center lg:ml-10">
+        <div className="carousel-item relative float-left w-full bg-fronteira-tec2 bg-cover bg-no-repeat h-screen">
+          <div className="mt-[350px] lg:mr-[100px] m-5 text-white lg:text-start text-center lg:ml-10">
             <div className="flex justify-start">
-              <h1 className="lg:text-5xl text-3xl font-normal lg:w-96">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h1>
+              <AnimatedOnScroll animationIn="zoomInLeft">
+                <h1 className="lg:text-5xl text-3xl font-normal lg:w-96 sm:text-start text-center">
+                  Seu <span className="font-bold">Aplicativo Mobile</span> feito
+                  com <span className="font-bold"> Segurança</span> e{' '}
+                  <span className="font-bold"> Tecnologia</span>
+                </h1>
+              </AnimatedOnScroll>
             </div>
             <div>
-              <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
-                Saiba Mais<span className="ml-3">{'>'}</span>
-              </button>
+              <AnimatedOnScroll animationIn="zoomInUp">
+                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
+                  Saiba Mais<span className="ml-3">{'>'}</span>
+                </button>
+              </AnimatedOnScroll>
             </div>
           </div>
         </div>
 
-        <div className="carousel-item relative float-left w-full bg-fronteira-tec3 bg-cover bg-no-repeat lg:h-[700px] h-[600px]">
-          <div className="mt-[200px] lg:mr-[100px] m-5 text-white text-center lg:ml-10">
+        <div className="carousel-item relative float-left w-full bg-fronteira-tec3 bg-cover bg-no-repeat h-screen">
+          <div className="mt-[350px] lg:mr-[100px] m-5 text-white text-center lg:ml-10">
             <div className="flex justify-center">
-              <h1 className="lg:text-5xl text-3xl font-normal lg:w-96">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h1>
+              <AnimatedOnScroll animationIn="zoomInUp">
+                <h1 className="lg:text-5xl text-3xl font-normal lg:w-96 text-center">
+                  <span className="font-bold">Sistemas </span> desenvolvidos
+                  para <span className="font-bold"> Solucionar</span> o seu{' '}
+                  <span className="font-bold"> Desafio</span>
+                </h1>
+              </AnimatedOnScroll>
             </div>
             <div>
-              <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
-                Saiba Mais<span className="ml-3">{'>'}</span>
-              </button>
+              <AnimatedOnScroll animationIn="zoomInUp">
+                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
+                  Saiba Mais<span className="ml-3">{'>'}</span>
+                </button>
+              </AnimatedOnScroll>
             </div>
           </div>
         </div>

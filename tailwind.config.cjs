@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.jsx'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif']
+      },
       backgroundImage: {
         'orange-waves': "url('./fundoMembros.png')",
         'fronteira-tec1': "url('./bgFronteiraTEC1.png')",
