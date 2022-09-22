@@ -21,14 +21,14 @@ export function Home() {
         id="Members"
         className="bg-orange-waves bg-no-repeat bg-fixed text-center p-5 sm:h-[600px] h-auto"
       >
-        <Members />
+        {/* <Members /> */}
       </div>
 
       <div id="Services" className="sm:p-[50px] pt-10">
         <Services />
       </div>
 
-      <div id="Events">
+      <div id="Events" className="pt-10">
         <Events />
       </div>
 

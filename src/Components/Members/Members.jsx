@@ -5,6 +5,8 @@ import devJean from '../../Assets/Devs/devJean.jpg'
 import devRobert from '../../Assets/Devs/devRobert.png'
 import devLuiz from '../../Assets/Devs/devLuiz.jpeg'
 import Swal from 'sweetalert2'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import '@splidejs/react-splide/css'
 
 export function Members() {
   function ModalMember(member) {
@@ -34,110 +36,86 @@ export function Members() {
           Nosso <span className="font-bold">Time</span>
         </h1>
       </AnimatedOnScroll>
-      <div className="grid gap-2 mx-auto grid-cols-1 lg:grid-cols-6 lg:max-w-screen-lg sm:mt-20">
-        <AnimatedOnScroll animationIn="zoomInUp" className="sm:pt-20">
-          <div className="p-2">
-            <img
-              className="object-cover w-40 h-40 m-auto rounded-full hover:scale-105 duration-150 cursor-pointer"
-              src={devLuiz}
-              alt="Pessoa"
-              onClick={() => {
-                ModalMember([
-                  {
-                    name: 'Luiz',
-                    office: 'Diretor de Gente e Gestão'
-                  }
-                ])
-              }}
-            />
-          </div>
-        </AnimatedOnScroll>
 
-        <AnimatedOnScroll animationIn="zoomInDown" className="sm:pt-10">
-          <div className="p-2">
-            <img
-              className="object-cover w-40 h-40 m-auto rounded-full hover:scale-105 duration-150 cursor-pointer"
-              src={devJean}
-              alt="Pessoa"
-              onClick={() => {
-                ModalMember([
-                  {
-                    name: 'Jean',
-                    office: 'Desenvolvedor'
-                  }
-                ])
-              }}
-            />
-          </div>
-        </AnimatedOnScroll>
+      <Splide
+        options={{
+          type: 'loop',
+          perPage: 3,
+          perMove: 1,
+          focus: 'center'
+        }}
+      >
+        <SplideSlide>
+          <img src={devLuiz} alt="Pessoa" />
+        </SplideSlide>
 
-        <AnimatedOnScroll animationIn="zoomInUp">
-          <div className="p-2">
-            <img
-              className="object-cover w-40 h-40 m-auto rounded-full hover:scale-105 duration-150 cursor-pointer"
-              src={devYuri}
-              alt="Pessoa"
-              onClick={() => {
-                ModalMember([
-                  {
-                    name: 'Yuri Rhuan dos Santos',
-                    office: 'Diretor de Projetos',
-                    photo: devYuri,
-                    hrefGitHub: 'https://github.com/yurirsantos',
-                    hrefLinkeDin: 'https://www.linkedin.com/in/yurirsantos/'
-                  }
-                ])
-              }}
-            />
-          </div>
-        </AnimatedOnScroll>
+        <SplideSlide>
+          <img
+            src={devJean}
+            alt="Pessoa"
+            onClick={() => {
+              ModalMember([
+                {
+                  name: 'Jean',
+                  office: 'Desenvolvedor'
+                }
+              ])
+            }}
+          />
+        </SplideSlide>
 
-        <AnimatedOnScroll animationIn="zoomInDown">
-          <div className="p-2">
-            <img
-              className="object-cover w-40 h-40 m-auto rounded-full hover:scale-105 duration-150 cursor-pointer"
-              src={devEduardo}
-              alt="Pessoa"
-              onClick={() => {
-                ModalMember([
-                  {
-                    name: 'Eduardo',
-                    office: 'Desenvolvedor'
-                  }
-                ])
-              }}
-            />
-          </div>
-        </AnimatedOnScroll>
+        <SplideSlide>
+          <img
+            src={devYuri}
+            alt="Pessoa"
+            onClick={() => {
+              ModalMember([
+                {
+                  name: 'Yuri Rhuan dos Santos',
+                  office: 'Diretor de Projetos',
+                  photo: devYuri,
+                  hrefGitHub: 'https://github.com/yurirsantos',
+                  hrefLinkeDin: 'https://www.linkedin.com/in/yurirsantos/'
+                }
+              ])
+            }}
+          />
+        </SplideSlide>
 
-        <AnimatedOnScroll animationIn="zoomInUp" className="sm:pt-10">
-          <div className="p-2">
-            <img
-              className="object-cover w-40 h-40 m-auto rounded-full hover:scale-105 duration-150 cursor-pointer"
-              src={devRobert}
-              alt="Pessoa"
-              onClick={() => {
-                ModalMember([
-                  {
-                    name: 'Robert Drey',
-                    office: 'Diretor de Mercado'
-                  }
-                ])
-              }}
-            />
-          </div>
-        </AnimatedOnScroll>
+        <SplideSlide>
+          <img
+            src={devEduardo}
+            alt="Pessoa"
+            onClick={() => {
+              ModalMember([
+                {
+                  name: 'Eduardo',
+                  office: 'Desenvolvedor'
+                }
+              ])
+            }}
+          />
+        </SplideSlide>
 
-        <AnimatedOnScroll animationIn="zoomInDown" className="sm:pt-20">
-          <div className="p-2">
-            <img
-              className="object-cover w-40 h-40 m-auto rounded-full hover:scale-105 duration-150 cursor-pointer"
-              src={devJean}
-              alt="Pessoa"
-            />
-          </div>
-        </AnimatedOnScroll>
-      </div>
+        <SplideSlide>
+          <img
+            src={devRobert}
+            alt="Pessoa"
+            onClick={() => {
+              ModalMember([
+                {
+                  name: 'Robert Drey',
+                  office: 'Diretor de Mercado'
+                }
+              ])
+            }}
+          />
+        </SplideSlide>
+
+        <SplideSlide>
+          <img src={devJean} alt="Pessoa" />
+        </SplideSlide>
+      </Splide>
     </div>
   )
 }

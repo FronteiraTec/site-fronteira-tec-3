@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Sobre nós', href: '#AboutUs' },
   { name: 'Serviços', href: '#Services' },
   { name: 'Membros', href: '#Members' },
-  { name: 'Contatos', href: '#' }
+  { name: 'Contatos', href: '#Contacts' }
 ]
 
 export function Navbar() {

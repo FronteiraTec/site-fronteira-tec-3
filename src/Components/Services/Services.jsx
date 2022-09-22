@@ -14,10 +14,10 @@ export function Services() {
         <div className="bg-gradient-to-r from-green-fronteira to-orange-fronteira h-1 w-40 m-auto mt-2" />
       </div>
 
-      <div className="grid max-w-screen-lg gap-5 md:grid-cols-2 sm:mx-auto p-10 text-center text-white">
+      <div className="grid max-w-screen-lg lg:gap-40 md:grid-cols-2 sm:mx-auto p-10 text-center text-white">
         <div>
           <AnimatedOnScroll animationIn="zoomInLeft">
-            <div className="mt-20 bg-green-fronteira/50 hover:bg-green-fronteira/40 p-5 pt-28 rounded-md h-[400px] sm:w-[420px] m-auto">
+            <div className="mt-20 bg-green-fronteira/50 hover:bg-green-fronteira/40 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto">
               <div className="flex justify-center">
                 <img
                   className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] absolute sm:-top-24 -top-16"
@@ -44,7 +44,7 @@ export function Services() {
 
         <div>
           <AnimatedOnScroll animationIn="zoomInLeft">
-            <div className="mt-20 bg-orange-fronteira/50 hover:bg-orange-fronteira/40 p-5 pt-28 rounded-md h-[400px] sm:w-[420px] m-auto">
+            <div className="mt-20 bg-orange-fronteira/50 hover:bg-orange-fronteira/40 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto">
               <div className="flex justify-center">
                 <img
                   className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] absolute sm:-top-24 -top-16"
@@ -68,9 +68,11 @@ export function Services() {
       </div>
       <div className="w-60 m-auto">
         <AnimatedOnScroll animationIn="tada">
-          <button className="w-full px-2 py-5 mt-6 text-md font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 hover:scale-110 duration-150 rounded-md">
-            Encontre em Contato {'>'}
-          </button>
+          <a href="#Contacts">
+            <button className="w-full px-2 py-5 mt-6 text-md font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 hover:scale-110 duration-150 rounded-md">
+              Encontre em Contato {'>'}
+            </button>
+          </a>
         </AnimatedOnScroll>
       </div>
     </div>

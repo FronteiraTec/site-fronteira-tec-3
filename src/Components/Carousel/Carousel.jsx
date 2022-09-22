@@ -32,14 +32,14 @@ export function Carousel() {
           <div className="mt-[350px] lg:mr-[100px] m-5 text-white lg:text-end text-center">
             <div className="flex justify-end">
               <AnimatedOnScroll animationIn="zoomInRight">
-                <h1 className="lg:text-5xl text-3xl font-normal lg:w-96 sm:text-end text-center">
-                  Nosso{' '}
-                  <span className="font-bold">Desenvolvimento cresce </span> o
-                  seu
+                <h1 className="lg:text-[40px] leading-none text-3xl font-normal lg:w-96 lg:text-end text-center">
+                  Nosso <span className="font-bold">Desenvolvimento </span>
+                  <span className="font-bold">cresce</span> o seu
                   <span className="font-bold"> Negócio</span>
                 </h1>
               </AnimatedOnScroll>
             </div>
+
             <div>
               <AnimatedOnScroll animationIn="zoomInUp">
                 <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-150">
@@ -54,9 +54,9 @@ export function Carousel() {
           <div className="mt-[350px] lg:mr-[100px] m-5 text-white lg:text-start text-center lg:ml-10">
             <div className="flex justify-start">
               <AnimatedOnScroll animationIn="zoomInLeft">
-                <h1 className="lg:text-5xl text-3xl font-normal lg:w-96 sm:text-start text-center">
+                <h1 className="lg:text-[40px] leading-none text-3xl font-normal lg:w-96 sm:text-start text-center">
                   Seu <span className="font-bold">Aplicativo Mobile</span> feito
-                  com <span className="font-bold"> Segurança</span> e{' '}
+                  com <span className="font-bold"> Segurança</span> e
                   <span className="font-bold"> Tecnologia</span>
                 </h1>
               </AnimatedOnScroll>
@@ -75,7 +75,7 @@ export function Carousel() {
           <div className="mt-[350px] lg:mr-[100px] m-5 text-white text-center lg:ml-10">
             <div className="flex justify-center">
               <AnimatedOnScroll animationIn="zoomInUp">
-                <h1 className="lg:text-5xl text-3xl font-normal lg:w-96 text-center">
+                <h1 className="lg:text-[40px] leading-none text-3xl font-normal lg:w-96 text-center">
                   <span className="font-bold">Sistemas </span> desenvolvidos
                   para <span className="font-bold"> Solucionar</span> o seu{' '}
                   <span className="font-bold"> Desafio</span>

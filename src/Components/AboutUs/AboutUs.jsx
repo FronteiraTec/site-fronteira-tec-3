@@ -5,7 +5,7 @@ import hexagonoVerde from '../../Assets/hexagonoVerde.png'
 
 export function AboutUs() {
   return (
-    <div>
+    <div className="pt-20 pb-20">
       <div className="relative">
         <div className="absolute lg:-top-28 md:-top-14 -top-5 lg:-right-10 right-4 lg:h-[450px] lg:w-[450px] h-[130px] w-[130px]">
           <AnimatedOnScroll animationIn="pulse">

@@ -1,23 +1,23 @@
 export function Events() {
   return (
-    <div className="flex w-[900px] m-auto">
+    <div className="flex w-max m-auto">
       <div>
         <img
-          className="object-cover h-80 w-40 hover:w-80 hover: duration-150 cursor-pointer rounded-tl-md rounded-bl-md"
+          className="object-cover lg:h-[600px] lg:w-40 lg:hover:w-96 w-28 h-96 hover:w-60 duration-150 cursor-pointer rounded-tl-md rounded-bl-md hover:shadow-2xl"
           src="./bgFronteiraTEC1.png"
           alt=""
         />
       </div>
       <div>
         <img
-          className="object-cover h-80 w-40 hover:w-80 duration-150 cursor-pointer"
+          className="object-cover lg:h-[600px] lg:w-40 lg:hover:w-96 w-28 h-96 hover:w-60 duration-150 cursor-pointer hover:shadow-2xl"
           src="./bgFronteiraTEC2.png"
           alt=""
         />
       </div>
       <div>
         <img
-          className="object-cover h-80 w-40 hover:w-80 duration-150 cursor-pointer rounded-tr-md rounded-br-md"
+          className="object-cover lg:h-[600px] lg:w-40 lg:hover:w-96 w-28 h-96 hover:w-60 duration-150 cursor-pointer rounded-tr-md rounded-br-md hover:shadow-2xl"
           src="./bgFronteiraTEC3.png"
           alt=""
         />

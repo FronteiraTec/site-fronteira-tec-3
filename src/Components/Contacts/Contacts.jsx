@@ -173,7 +173,11 @@ export function Contacts() {
                     </AnimatedOnScroll>
                   </a>
 
-                  <a className="mx-1.5" href="#">
+                  <a
+                    className="mx-1.5"
+                    target="_blanck"
+                    href="https://api.whatsapp.com/send?phone=5549999484897&text=Ol%C3%A1!%20Tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20Fronteria%20Tec"
+                  >
                     <AnimatedOnScroll animationIn="zoomInRight">
                       <img
                         className="w-10 h-10"
