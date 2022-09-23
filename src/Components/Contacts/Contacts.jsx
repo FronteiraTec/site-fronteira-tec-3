@@ -1,7 +1,50 @@
 import logoFronteiraTecColotido from '../../Assets/Logomarca/logomarcaFronteiraTecColorido.png'
 import { AnimatedOnScroll } from 'react-animated-css-onscroll'
+import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
+import React, { useRef } from 'react'
 
 export function Contacts() {
+  const form = useRef()
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_arfeo3q', //ID Service
+        'template_h3hmauf', //ID Template
+        form.current,
+        'Q0jXbAzRtbeYXCEK2' //Key Public
+      )
+      .then(
+        result => {
+          Swal.fire(
+            'E-mail Enviado!',
+            'Seu e-mail foi enviado com sucesso para Fronteira Tec',
+            'success'
+          )
+
+          setTimeout(() => {
+            location.reload()
+          }, 1000)
+
+          const input_user_name = (document.getElementById('user_name').value =
+            '')
+          const input_user_email = (document.getElementById(
+            'user_email'
+          ).value = '')
+          const input_message = (document.getElementById('message').value = '')
+        },
+        error => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'E-mail não enviado, entre em contato com nossa central de atendimento atráves do telefone (49) 98880-1287'
+          })
+        }
+      )
+  }
   return (
     <section>
       <div className="container px-6 mx-auto">
@@ -14,11 +57,13 @@ export function Contacts() {
                 </h1>
               </AnimatedOnScroll>
 
-              <form className="mt-6">
+              <form ref={form} onSubmit={sendEmail} className="mt-6">
                 <div className="flex-1">
                   <AnimatedOnScroll animationIn="zoomInLeft">
                     <input
                       type="text"
+                      name="user_name"
+                      id="user_name"
                       placeholder="Seu nome"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                       required
@@ -30,6 +75,8 @@ export function Contacts() {
                   <AnimatedOnScroll animationIn="zoomInLeft">
                     <input
                       type="email"
+                      name="user_email"
+                      id="user_email"
                       placeholder="E-mail"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                       required
@@ -42,6 +89,8 @@ export function Contacts() {
                     <AnimatedOnScroll animationIn="zoomInLeft">
                       <input
                         type="text"
+                        name="user_number"
+                        id="user_number"
                         placeholder="Telefone"
                         max="11"
                         className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
@@ -54,6 +103,8 @@ export function Contacts() {
                     <AnimatedOnScroll animationIn="zoomInLeft">
                       <input
                         type="text"
+                        name="user_company"
+                        id="user_company"
                         placeholder="Empresa"
                         className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                         required
@@ -66,6 +117,8 @@ export function Contacts() {
                   <AnimatedOnScroll animationIn="zoomInLeft">
                     <textarea
                       type="text"
+                      name="user_message"
+                      id="user_message"
                       placeholder="Mensagem"
                       className="block w-full px-5 py-3 mt-2 h-32 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                       required
@@ -91,9 +144,12 @@ export function Contacts() {
 
                 <div className="w-72 m-auto">
                   <AnimatedOnScroll animationIn="tada">
-                    <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 rounded-md">
-                      Enviar {'>'}
-                    </button>
+                    <input
+                      className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 rounded-md"
+                      type="submit"
+                      value="Enviar"
+                      id="buttonEnviar"
+                    />
                   </AnimatedOnScroll>
                 </div>
               </form>
