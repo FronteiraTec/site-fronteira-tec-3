@@ -12,10 +12,10 @@ export function Contacts() {
 
     emailjs
       .sendForm(
-        'service_arfeo3q', //ID Service
-        'template_h3hmauf', //ID Template
+        `${import.meta.env.VITE_SERVICE_KEY}`, //ID Service
+        `${import.meta.env.VITE_TEMPLATE_KEY}`, //ID Template
         form.current,
-        'Q0jXbAzRtbeYXCEK2' //Key Public
+        `${import.meta.env.VITE_PUBLIC_KEY}` //Key Public
       )
       .then(
         result => {
@@ -37,11 +37,7 @@ export function Contacts() {
           const input_message = (document.getElementById('message').value = '')
         },
         error => {
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'E-mail não enviado, entre em contato com nossa central de atendimento atráves do telefone (49) 98880-1287'
-          })
+          console.log(error)
         }
       )
   }
