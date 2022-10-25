@@ -5,9 +5,9 @@ import hexagonoVerde from '../../Assets/hexagonoVerde.png'
 
 export function AboutUs() {
   return (
-    <div className="pt-20 pb-20">
+    <div className="pt-20 pb-20 sm:mt-[200px] lg:mt-0">
       <div className="relative">
-        <div className="absolute lg:-top-28 md:-top-14 -top-5 lg:-right-10 right-4 lg:h-[450px] lg:w-[450px] h-[130px] w-[130px]">
+        <div className="absolute lg:-top-28 md:-top-14 -top-72 lg:-right-10 right-4 lg:h-[450px] lg:w-[450px] h-[130px] w-[130px]">
           <AnimatedOnScroll animationIn="pulse">
             <img src={hexagonoLaranja} alt="" />
           </AnimatedOnScroll>
@@ -15,21 +15,21 @@ export function AboutUs() {
       </div>
 
       <div className="relative">
-        <div className="absolute lg:top-36 top-28 lg:-left-10 left-4 lg:h-[450px] lg:w-[450px] h-[130px] w-[130px]">
+        <div className="absolute lg:top-36 -top-24 lg:-left-10 left-4 lg:h-[450px] lg:w-[450px] h-[130px] w-[130px]">
           <AnimatedOnScroll animationIn="pulse">
             <img src={hexagonoVerde} alt="" />
           </AnimatedOnScroll>
         </div>
       </div>
 
-      <div className="grid max-w-screen-lg gap-5 md:grid-cols-2 sm:mx-auto p-5 text-center divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-green-500">
+      <div className="grid max-w-screen-lg gap-5 lg:grid-cols-2 lg:mx-auto sm:grid-cols-1 p-5 text-center lg:divide-y-0 lg:divide-x-2 divide-y-2 divide-x-0 divide-green-500">
         <div>
           <AnimatedOnScroll animationIn="bounceInLeft">
             <div>
               <img
                 src={iconFronteiraTec}
                 alt=""
-                className="sm:h-[280px] sm:w-[280px] h-[200px] w-[200px] m-auto sm:absolute sm:top-11 sm:right-20"
+                className="lg:h-[320px] lg:w-[320px] sm:h-[240px] sm:w-[240px] m-auto sm:absolute lg:top-9 sm:-top-64 sm:right-44"
               />
             </div>
           </AnimatedOnScroll>

@@ -13,18 +13,18 @@ export function Home() {
         <Carousel />
       </div>
 
-      <div id="AboutUs" className="sm:p-[50px] pb-10">
+      <div id="AboutUs" className="lg:p-[50px] pb-10">
         <AboutUs />
       </div>
 
       <div
         id="Members"
-        className="bg-orange-waves bg-no-repeat bg-fixed text-center p-5 sm:h-[600px] h-auto"
+        className="bg-orange-waves bg-no-repeat bg-fixed text-center p-5 lg:h-[600px] h-auto"
       >
-        {/* <Members /> */}
+        <Members />
       </div>
 
-      <div id="Services" className="sm:p-[50px] pt-10">
+      <div id="Services" className="lg:p-[50px] pt-10">
         <Services />
       </div>
 
@@ -32,7 +32,7 @@ export function Home() {
         <Events />
       </div>
 
-      <div id="Contacts" className="sm:p-[50px] pb-10">
+      <div id="Contacts" className="lg:p-[50px] pb-10">
         <Contacts />
       </div>
     </Main>

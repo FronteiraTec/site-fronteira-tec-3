@@ -44,12 +44,12 @@ export function Contacts() {
   return (
     <section>
       <div className="container px-6 mx-auto">
-        <div className="sm:flex sm:items-center">
+        <div className="sm:block sm:items-center lg:flex">
           <div className="mt-8 lg:w-4/5 lg:mx-auto">
             <div className="w-full px-8 py-10 mx-auto overflow-hidden lg:max-w-xl">
               <AnimatedOnScroll animationIn="zoomInUp">
                 <h1 className="text-3xl font-medium text-green-fronteira text-center">
-                  Entre com <span className="font-bold">Contato</span>
+                  Entre em com <span className="font-bold">Contato</span>
                 </h1>
               </AnimatedOnScroll>
 
@@ -152,7 +152,7 @@ export function Contacts() {
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-[350px] mx-auto">
+          <div className="lg:w-1/2 w-[450px] mx-auto">
             <div className="w-full px-3 py-10 mx-auto overflow-hidden lg:max-w-xl">
               <div className="mt-6 space-y-8 md:mt-8">
                 <AnimatedOnScroll animationIn="zoomInRight">
