@@ -14,7 +14,7 @@ export function Services() {
         <div className="bg-gradient-to-r from-green-fronteira to-orange-fronteira h-1 w-40 m-auto mt-2" />
       </div>
 
-      <div className="grid max-w-screen-lg lg:gap-40 md:grid-cols-2 sm:mx-auto p-10 text-center text-white">
+      <div className="w-full flex flex-col justify-around lg:flex-row sm:mx-auto p-10 text-center text-white">
         <div>
           <AnimatedOnScroll animationIn="zoomInLeft">
             <div className="mt-20 bg-green-fronteira/50 hover:bg-green-fronteira/40 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto">

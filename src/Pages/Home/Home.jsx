@@ -21,7 +21,7 @@ export function Home() {
         id="Members"
         className="bg-orange-waves bg-no-repeat bg-fixed text-center p-5 lg:h-[600px] h-auto"
       >
-        <Members />
+        {/* <Members /> */}
       </div>
 
       <div id="Services" className="lg:p-[50px] pt-10">
