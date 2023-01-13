@@ -6,9 +6,10 @@ import hexagonoVerde from '../../Assets/hexagonoVerde.png'
 export function AboutUs() {
   return (
     // sm:mt-[200px]
-    <div className=''>
+    <div className='max-w-[1440px] m-auto'>
       <div className="pt-2 pb-20 lg:mt-0 lg:flex max-w-[1440px]"> 
         <div className='flex pt-1 pb-3 mb-3 lg:border-b-0'>
+
           <div className="self-start absolute ">
             <div className="w-[100px] md:w-[180px] lg:w-[100px]">
               <AnimatedOnScroll animationIn="pulse">
@@ -38,12 +39,13 @@ export function AboutUs() {
               </AnimatedOnScroll>
             </div>
           </div>
-        <div className='block lg:w-[2px] lg:h-full lg:bg-gradient-to-b from-green-fronteira to-orange-fronteira'></div>
+
+          <div className='block lg:w-[2px] lg:h-full lg:bg-gradient-to-b from-green-fronteira to-orange-fronteira'></div>
         </div>
           <div>
             <div className="sm:ml-14 mt-5 p-2">
               <AnimatedOnScroll animationIn="bounceInRight">
-                <div>
+                <div className="px-3">
                   <h1 className="text-4xl mb-5 text-green-fronteira">
                     A Fronteira <span className="font-bold">TEC</span>
                   </h1>

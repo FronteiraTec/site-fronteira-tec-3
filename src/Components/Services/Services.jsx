@@ -26,7 +26,7 @@ export function Services() {
                 />
               </div>
               <h1 className="text-4xl mb-5 font-bold">Web</h1>
-              <p className="text-lg text-justify">
+              <p className="text-lg sm:text-justify sm:leading-5">
                 Desenvolmemos{' '}
                 <span className="font-bold">
                   {' '}
@@ -53,7 +53,7 @@ export function Services() {
                 />
               </div>
               <h1 className="text-4xl mb-5 font-bold">Mobile</h1>
-              <p className="text-lg text-justify">
+              <p className="text-lg sm:text-justify sm:leading-5">
                 Desenvolvemos{' '}
                 <span className="font-bold"> aplicativos mobile</span> focados
                 na compatibilidade com os sistemas operacionais{' '}

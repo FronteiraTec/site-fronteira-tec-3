@@ -215,7 +215,7 @@ export function Contacts() {
                 </AnimatedOnScroll>
 
                 <div className="flex mt-4">
-                  <a className="mx-1.5" href="#">
+                  <a className="mx-1.5" href="https://www.instagram.com/fronteira_tec/" target="_blank">
                     <AnimatedOnScroll animationIn="zoomInRight">
                       <img
                         className="w-10 h-10"
