@@ -3,6 +3,9 @@ import devEduardo from '../../Assets/Devs/devEduardo.jpg'
 import devJean from '../../Assets/Devs/devJean.jpg'
 import devRobert from '../../Assets/Devs/devRobert.png'
 import devLuiz from '../../Assets/Devs/devLuiz.png'
+import devAmanda from '../../Assets/Devs/devAmanda.png'
+import devMatheus from '../../Assets/Devs/devMatheus.png'
+import devFranci from '../../Assets/Devs/devFranciele.png'
 import padrao from '../../Assets/Devs/padrao.png'
 
 export const slideData = [
@@ -44,7 +47,7 @@ export const slideData = [
     {
         "name":"Amanda Scurupa", 
         "func":"Treinee Gente e Gestão",
-        "image": padrao  
+        "image": devAmanda  
     },
     {
         "name":"Alexandre Souza", 
@@ -59,12 +62,12 @@ export const slideData = [
     {
         "name":"Franciele Dalarosa", 
         "func":"Treinee de Mercado",
-        "image": padrao  
+        "image": devFranci  
     },
     {
         "name":"Matheus Henrique", 
         "func":"Assessor de Projetos",
-        "image": padrao  
+        "image": devMatheus  
     },
     {},{"end": true}
 ]
