@@ -10,7 +10,7 @@ module.exports = {
         'orange-waves': "url('./fundoMembros.png')",
         'fronteira-tec1': "url('./bgFronteiraTEC1.png')",
         'fronteira-tec2': "url('./bgFronteiraTEC2.png')",
-        'fronteira-tec3': "url('./bgFronteiraTEC3.png')"
+        'fronteira-tec3': "url('./bgFronteiraTEC3.png')",
       },
       backgroundColor: {
         'white-fronteira': '#F5F5F5'

@@ -14,7 +14,7 @@ export function Services() {
         <div className="bg-gradient-to-r from-green-fronteira to-orange-fronteira h-1 w-40 m-auto mt-2" />
       </div>
 
-      <div className="grid max-w-screen-lg lg:gap-40 md:grid-cols-2 sm:mx-auto p-10 text-center text-white">
+      <div className="w-full flex flex-col justify-around lg:flex-row sm:mx-auto p-10 text-center text-white">
         <div>
           <AnimatedOnScroll animationIn="zoomInLeft">
             <div className="mt-20 bg-green-fronteira/50 hover:bg-green-fronteira/40 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto">
@@ -26,7 +26,7 @@ export function Services() {
                 />
               </div>
               <h1 className="text-4xl mb-5 font-bold">Web</h1>
-              <p className="text-lg text-justify">
+              <p className="text-lg sm:text-justify sm:leading-5">
                 Desenvolmemos{' '}
                 <span className="font-bold">
                   {' '}
@@ -53,7 +53,7 @@ export function Services() {
                 />
               </div>
               <h1 className="text-4xl mb-5 font-bold">Mobile</h1>
-              <p className="text-lg text-justify">
+              <p className="text-lg sm:text-justify sm:leading-5">
                 Desenvolvemos{' '}
                 <span className="font-bold"> aplicativos mobile</span> focados
                 na compatibilidade com os sistemas operacionais{' '}

@@ -31,7 +31,7 @@ export function Navbar() {
               </AnimatedOnScroll>
             </a>
 
-            <div className="-mr-2 flex items-center md:hidden">
+            <div className="flex items-center md:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:text-gray-400 focus:outline-none focus:none">
                 <Bars3Icon
                   className="lg:h-10 lg:w-10 h-7 w-7 mr-10"

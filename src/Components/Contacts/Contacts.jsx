@@ -138,7 +138,7 @@ export function Contacts() {
                   </AnimatedOnScroll>
                 </div>
 
-                <div className="w-72 m-auto">
+                <div className="w-10/12 m-auto">
                   <AnimatedOnScroll animationIn="tada">
                     <input
                       className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 rounded-md"
@@ -152,12 +152,12 @@ export function Contacts() {
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-[450px] mx-auto">
+          <div className="lg:w-1/2 w-full mx-auto">
             <div className="w-full px-3 py-10 mx-auto overflow-hidden lg:max-w-xl">
               <div className="mt-6 space-y-8 md:mt-8">
                 <AnimatedOnScroll animationIn="zoomInRight">
                   <img
-                    className="sm:h-32 h-28"
+                    className="sm:h-32 h-25"
                     src={logoFronteiraTecColotido}
                     alt=""
                   />
@@ -207,15 +207,15 @@ export function Contacts() {
                 </p>
               </div>
 
-              <div className="mt-6 w-80 md:mt-8">
+              <div className="mt-6 w-10/12 md:mt-8">
                 <AnimatedOnScroll animationIn="zoomInRight">
                   <h3 className="text-gray-600 dark:text-gray-300 ">
                     Siga-nos
                   </h3>
                 </AnimatedOnScroll>
 
-                <div className="flex mt-4 -mx-1.5 ">
-                  <a className="mx-1.5" href="#">
+                <div className="flex mt-4">
+                  <a className="mx-1.5" href="https://www.instagram.com/fronteira_tec/" target="_blank">
                     <AnimatedOnScroll animationIn="zoomInRight">
                       <img
                         className="w-10 h-10"
