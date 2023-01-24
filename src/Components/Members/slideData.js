@@ -50,7 +50,7 @@ export const slideData = [
     },
     {
         "name":"Amanda Scurupa", 
-        "func":"Treinee Gente e Gestão",
+        "func":"Assessora de Gente e Gestão",
         "image": devAmanda  
     },
     {
@@ -60,12 +60,12 @@ export const slideData = [
     },
     {
         "name":"Carlos Piccinini", 
-        "func":"Treinee Gente e Gestão",
+        "func":"Assessor de Gente e Gestão",
         "image": devCarlos  
     },
     {
         "name":"Franciele Dalarosa", 
-        "func":"Treinee de Mercado",
+        "func":"Assessora de Mercado",
         "image": devFranci  
     },
     {
