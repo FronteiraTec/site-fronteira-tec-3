@@ -6,18 +6,22 @@ import devLuiz from '../../Assets/Devs/devLuiz.png'
 import devAmanda from '../../Assets/Devs/devAmanda.png'
 import devMatheus from '../../Assets/Devs/devMatheus.png'
 import devFranci from '../../Assets/Devs/devFranciele.png'
+import devOtavio from '../../Assets/Devs/devOtavio.png'
+import devAlexandre from '../../Assets/Devs/devAlexandre.png'
+import devJudah from '../../Assets/Devs/devJudah.png'
+import devCarlos from '../../Assets/Devs/devCarlos.png'
 import padrao from '../../Assets/Devs/padrao.png'
 
 export const slideData = [
     {"begin": true},{},{
         "name":"Otávio Pato", 
         "func":"Assessor de projetos",
-        "image": padrao
+        "image": devOtavio
     },
     {
         "name":"Judah Milhomem", 
         "func":"Diretor de mercado",
-        "image": padrao
+        "image": devJudah
     },
     {
         "name":"Robert Drey", 
@@ -52,12 +56,12 @@ export const slideData = [
     {
         "name":"Alexandre Souza", 
         "func":"Assessor de Projetos",
-        "image": padrao  
+        "image": devAlexandre  
     },
     {
         "name":"Carlos Piccinini", 
         "func":"Treinee Gente e Gestão",
-        "image": padrao  
+        "image": devCarlos  
     },
     {
         "name":"Franciele Dalarosa", 
