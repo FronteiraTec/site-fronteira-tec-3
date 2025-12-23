@@ -1,5 +1,5 @@
 import logoFronteiraTecColotido from '../../Assets/Logomarca/logomarcaFronteiraTecColorido.png'
-import { AnimatedOnScroll } from 'react-animated-css-onscroll'
+import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
 import React, { useRef } from 'react'
@@ -47,15 +47,25 @@ export function Contacts() {
         <div className="sm:block sm:items-center lg:flex">
           <div className="mt-8 lg:w-4/5 lg:mx-auto">
             <div className="w-full px-8 py-10 mx-auto overflow-hidden lg:max-w-xl">
-              <AnimatedOnScroll animationIn="zoomInUp">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <h1 className="text-3xl font-medium text-green-fronteira text-center">
                   Entre em com <span className="font-bold">Contato</span>
                 </h1>
-              </AnimatedOnScroll>
+              </motion.div>
 
               <form ref={form} onSubmit={sendEmail} className="mt-6">
                 <div className="flex-1">
-                  <AnimatedOnScroll animationIn="zoomInLeft">
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
                     <input
                       type="text"
                       name="user_name"
@@ -64,11 +74,16 @@ export function Contacts() {
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                       required
                     />
-                  </AnimatedOnScroll>
+                  </motion.div>
                 </div>
 
                 <div className="flex-1 mt-6">
-                  <AnimatedOnScroll animationIn="zoomInLeft">
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    viewport={{ once: true }}
+                  >
                     <input
                       type="email"
                       name="user_email"
@@ -77,12 +92,17 @@ export function Contacts() {
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                       required
                     />
-                  </AnimatedOnScroll>
+                  </motion.div>
                 </div>
 
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2 mt-6">
-                    <AnimatedOnScroll animationIn="zoomInLeft">
+                    <motion.div
+                      initial={{ opacity: 0, x: -100 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
                       <input
                         type="text"
                         name="user_number"
@@ -92,11 +112,16 @@ export function Contacts() {
                         className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                         required
                       />
-                    </AnimatedOnScroll>
+                    </motion.div>
                   </div>
 
                   <div className="flex-1 px-2 mt-6">
-                    <AnimatedOnScroll animationIn="zoomInLeft">
+                    <motion.div
+                      initial={{ opacity: 0, x: -100 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 }}
+                      viewport={{ once: true }}
+                    >
                       <input
                         type="text"
                         name="user_company"
@@ -105,12 +130,17 @@ export function Contacts() {
                         className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                         required
                       />
-                    </AnimatedOnScroll>
+                    </motion.div>
                   </div>
                 </div>
 
                 <div className="w-full mt-10">
-                  <AnimatedOnScroll animationIn="zoomInLeft">
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    viewport={{ once: true }}
+                  >
                     <textarea
                       type="text"
                       name="user_message"
@@ -119,11 +149,16 @@ export function Contacts() {
                       className="block w-full px-5 py-3 mt-2 h-32 text-gray-700 placeholder:text-xl placeholder-green-fronteira bg-transparent border-b border-green-fronteira outline-0"
                       required
                     />
-                  </AnimatedOnScroll>
+                  </motion.div>
                 </div>
 
                 <div className="form-check mt-5">
-                  <AnimatedOnScroll animationIn="zoomInDown">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
                     <input
                       className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-green-fronteira checked:border-green-fronteira focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                       type="checkbox"
@@ -135,18 +170,23 @@ export function Contacts() {
                     >
                       Ao informar meus dados, eu concordo com o uso comercial
                     </label>
-                  </AnimatedOnScroll>
+                  </motion.div>
                 </div>
 
                 <div className="w-10/12 m-auto">
-                  <AnimatedOnScroll animationIn="tada">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    viewport={{ once: true }}
+                  >
                     <input
                       className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 rounded-md"
                       type="submit"
                       value="Enviar"
                       id="buttonEnviar"
                     />
-                  </AnimatedOnScroll>
+                  </motion.div>
                 </div>
               </form>
             </div>
@@ -155,109 +195,140 @@ export function Contacts() {
           <div className="lg:w-1/2 w-full mx-auto">
             <div className="w-full px-3 py-10 mx-auto overflow-hidden lg:max-w-xl">
               <div className="mt-6 space-y-8 md:mt-8">
-                <AnimatedOnScroll animationIn="zoomInRight">
+                <motion.div
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
                   <img
                     className="sm:h-32 h-25"
                     src={logoFronteiraTecColotido}
                     alt=""
                   />
-                </AnimatedOnScroll>
+                </motion.div>
 
-                <p className="flex items-start -mx-2">
-                  <AnimatedOnScroll animationIn="zoomInRight">
-                    <img className="w-8 h-8" src="./Location.svg" alt="" />
-                  </AnimatedOnScroll>
-                  <AnimatedOnScroll animationIn="zoomInRight">
-                    <span className="mx-2 text-green-fronteira w-72">
-                      SC-484 - km 2, SC, 89815-899
-                    </span>
-                  </AnimatedOnScroll>
-                </p>
+                <motion.p
+                  className="flex items-start -mx-2"
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <img className="w-8 h-8" src="./Location.svg" alt="" />
+                  <span className="mx-2 text-green-fronteira w-72">
+                    SC-484 - km 2, SC, 89815-899
+                  </span>
+                </motion.p>
 
-                <p className="flex items-start -mx-2">
-                  <AnimatedOnScroll animationIn="zoomInRight">
-                    <img
-                      className="w-8 h-8"
-                      src="./SocialMedia/Phone.svg"
-                      alt=""
-                    />
-                  </AnimatedOnScroll>
+                <motion.p
+                  className="flex items-start -mx-2"
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <img
+                    className="w-8 h-8"
+                    src="./SocialMedia/Phone.svg"
+                    alt=""
+                  />
+                  <span className="mx-2 text-green-fronteira w-72">
+                    (49) 99948-4897
+                  </span>
+                </motion.p>
 
-                  <AnimatedOnScroll animationIn="zoomInRight">
-                    <span className="mx-2 text-green-fronteira w-72">
-                      (49) 99948-4897
-                    </span>
-                  </AnimatedOnScroll>
-                </p>
-
-                <p className="flex items-start -mx-2">
-                  <AnimatedOnScroll animationIn="zoomInRight">
-                    <img
-                      className="w-8 h-8"
-                      src="./SocialMedia/Chat.svg"
-                      alt=""
-                    />
-                  </AnimatedOnScroll>
-
-                  <AnimatedOnScroll animationIn="zoomInRight">
-                    <span className="mx-2 text-green-fronteira w-72">
-                      contato.fronteiratec@gmail.com
-                    </span>
-                  </AnimatedOnScroll>
-                </p>
+                <motion.p
+                  className="flex items-start -mx-2"
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <img
+                    className="w-8 h-8"
+                    src="./SocialMedia/Chat.svg"
+                    alt=""
+                  />
+                  <span className="mx-2 text-green-fronteira w-72">
+                    contato.fronteiratec@gmail.com
+                  </span>
+                </motion.p>
               </div>
 
               <div className="mt-6 w-10/12 md:mt-8">
-                <AnimatedOnScroll animationIn="zoomInRight">
-                  <h3 className="text-gray-600 dark:text-gray-300 ">
-                    Siga-nos
-                  </h3>
-                </AnimatedOnScroll>
+                <motion.h3
+                  className="text-gray-600 dark:text-gray-300"
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  Siga-nos
+                </motion.h3>
 
                 <div className="flex mt-4">
-                  <a className="mx-1.5" href="https://www.instagram.com/fronteira_tec/" target="_blank">
-                    <AnimatedOnScroll animationIn="zoomInRight">
-                      <img
-                        className="w-10 h-10"
-                        src="./SocialMedia/Instagram.svg"
-                        alt=""
-                      />
-                    </AnimatedOnScroll>
-                  </a>
+                  <motion.a
+                    className="mx-1.5"
+                    href="https://www.instagram.com/fronteira_tec/"
+                    target="_blank"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <img
+                      className="w-10 h-10"
+                      src="./SocialMedia/Instagram.svg"
+                      alt=""
+                    />
+                  </motion.a>
 
-                  <a
+                  <motion.a
                     className="mx-1.5"
                     target="_blanck"
                     href="https://api.whatsapp.com/send?phone=5549999484897&text=Ol%C3%A1!%20Tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20a%20Fronteria%20Tec"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.6 }}
+                    viewport={{ once: true }}
                   >
-                    <AnimatedOnScroll animationIn="zoomInRight">
-                      <img
-                        className="w-10 h-10"
-                        src="./SocialMedia/Whatsapp.svg"
-                        alt=""
-                      />
-                    </AnimatedOnScroll>
-                  </a>
+                    <img
+                      className="w-10 h-10"
+                      src="./SocialMedia/Whatsapp.svg"
+                      alt=""
+                    />
+                  </motion.a>
 
-                  <a className="mx-1.5" href="#">
-                    <AnimatedOnScroll animationIn="zoomInRight">
-                      <img
-                        className="w-10 h-10"
-                        src="./SocialMedia/Twitter.svg"
-                        alt=""
-                      />
-                    </AnimatedOnScroll>
-                  </a>
+                  <motion.a
+                    className="mx-1.5"
+                    href="#"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.7 }}
+                    viewport={{ once: true }}
+                  >
+                    <img
+                      className="w-10 h-10"
+                      src="./SocialMedia/Twitter.svg"
+                      alt=""
+                    />
+                  </motion.a>
 
-                  <a className="mx-1.5" href="#">
-                    <AnimatedOnScroll animationIn="zoomInRight">
-                      <img
-                        className="w-10 h-10"
-                        src="./SocialMedia/Facebook.svg"
-                        alt=""
-                      />
-                    </AnimatedOnScroll>
-                  </a>
+                  <motion.a
+                    className="mx-1.5"
+                    href="#"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    <img
+                      className="w-10 h-10"
+                      src="./SocialMedia/Facebook.svg"
+                      alt=""
+                    />
+                  </motion.a>
                 </div>
               </div>
             </div>

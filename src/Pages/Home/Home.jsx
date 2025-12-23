@@ -9,30 +9,30 @@ import { Events } from '../../Components/Events/Events'
 export function Home() {
   return (
     <Main>
-      <div id="Home">
+      <div id="Home" className="dark:bg-gray-900">
         <Carousel />
       </div>
 
-      <div id="AboutUs" className="lg:p-[50px] pb-10">
+      <div id="AboutUs" className="lg:p-[50px] pb-10 dark:bg-gray-900 dark:text-white">
         <AboutUs />
       </div>
 
       <div
         id="Members"
-        className="bg-orange-waves bg-no-repeat bg-fixed text-center p-5 lg:h-[600px] h-auto"
+        className="bg-orange-waves dark:bg-gray-800 bg-no-repeat bg-fixed text-center p-5 lg:h-[600px] h-auto"
       >
         <Members />
       </div>
 
-      <div id="Services" className="lg:p-[50px] pt-10">
+      <div id="Services" className="lg:p-[50px] pt-10 dark:bg-gray-900">
         <Services />
       </div>
 
-      <div id="Events" className="pt-10">
+      <div id="Events" className="pt-10 dark:bg-gray-900">
         <Events />
       </div>
 
-      <div id="Contacts" className="lg:p-[50px] pb-10">
+      <div id="Contacts" className="lg:p-[50px] pb-10 dark:bg-gray-800">
         <Contacts />
       </div>
     </Main>

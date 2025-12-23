@@ -1,4 +1,4 @@
-import { AnimatedOnScroll } from 'react-animated-css-onscroll'
+import { motion } from 'framer-motion'
 import iconComputador from '../../Assets/iconComputador.png'
 import iconCelular from '../../Assets/iconCelular.png'
 
@@ -6,18 +6,30 @@ export function Services() {
   return (
     <div>
       <div className="text-center">
-        <AnimatedOnScroll animationIn="zoomInUp">
-          <h1 className="text-4xl mb-5 text-green-fronteira">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <br></br>
+          <br></br>
+          <h1 className="text-4xl mb-5 text-green-fronteira dark:text-green-400">
             Nossos <span className="font-bold">Serviços</span>
           </h1>
-        </AnimatedOnScroll>
+        </motion.div>
         <div className="bg-gradient-to-r from-green-fronteira to-orange-fronteira h-1 w-40 m-auto mt-2" />
       </div>
 
-      <div className="w-full flex flex-col justify-around lg:flex-row sm:mx-auto p-10 text-center text-white">
+      <div className="w-full flex flex-col justify-around lg:flex-row sm:mx-auto p-10 text-center">
         <div>
-          <AnimatedOnScroll animationIn="zoomInLeft">
-            <div className="mt-20 bg-green-fronteira/50 hover:bg-green-fronteira/40 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="mt-20 bg-green-fronteira/50 hover:bg-green-fronteira/40 dark:bg-green-800/40 dark:hover:bg-green-700/50 dark:border dark:border-green-600/50 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto shadow-lg">
               <div className="flex justify-center">
                 <img
                   className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] absolute sm:-top-24 -top-16"
@@ -25,8 +37,8 @@ export function Services() {
                   alt=""
                 />
               </div>
-              <h1 className="text-4xl mb-5 font-bold">Web</h1>
-              <p className="text-lg sm:text-justify sm:leading-5">
+              <h1 className="text-4xl mb-5 font-bold text-white dark:text-gray-100">Web</h1>
+              <p className="text-lg sm:text-justify sm:leading-5 text-white dark:text-gray-200">
                 Desenvolmemos{' '}
                 <span className="font-bold">
                   {' '}
@@ -39,12 +51,17 @@ export function Services() {
                 seu ramo na pesquisa pelo Google.
               </p>
             </div>
-          </AnimatedOnScroll>
+          </motion.div>
         </div>
 
         <div>
-          <AnimatedOnScroll animationIn="zoomInLeft">
-            <div className="mt-20 bg-orange-fronteira/50 hover:bg-orange-fronteira/40 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="mt-20 bg-orange-fronteira/50 hover:bg-orange-fronteira/40 dark:bg-orange-800/40 dark:hover:bg-orange-700/50 dark:border dark:border-orange-600/50 p-10 pt-28 rounded-md lg:h-[480px] h-auto sm:w-[500px] m-auto shadow-lg">
               <div className="flex justify-center">
                 <img
                   className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] absolute sm:-top-24 -top-16"
@@ -52,8 +69,8 @@ export function Services() {
                   alt=""
                 />
               </div>
-              <h1 className="text-4xl mb-5 font-bold">Mobile</h1>
-              <p className="text-lg sm:text-justify sm:leading-5">
+              <h1 className="text-4xl mb-5 font-bold text-white dark:text-gray-100">Mobile</h1>
+              <p className="text-lg sm:text-justify sm:leading-5 text-white dark:text-gray-200">
                 Desenvolvemos{' '}
                 <span className="font-bold"> aplicativos mobile</span> focados
                 na compatibilidade com os sistemas operacionais{' '}
@@ -63,17 +80,22 @@ export function Services() {
                 processos internos e/ou externos do seu negócio.
               </p>
             </div>
-          </AnimatedOnScroll>
+          </motion.div>
         </div>
       </div>
       <div className="w-60 m-auto">
-        <AnimatedOnScroll animationIn="tada">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
           <a href="#Contacts">
             <button className="w-full px-2 py-5 mt-6 text-md font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-fronteira hover:bg-green-fronteira/80 hover:scale-110 duration-150 rounded-md">
               Encontre em Contato {'>'}
             </button>
           </a>
-        </AnimatedOnScroll>
+        </motion.div>
       </div>
     </div>
   )

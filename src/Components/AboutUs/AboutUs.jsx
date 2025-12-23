@@ -1,4 +1,4 @@
-import { AnimatedOnScroll } from 'react-animated-css-onscroll'
+import { motion } from 'framer-motion'
 import iconFronteiraTec from '../../Assets/Logomarca/iconFronteiraTec.png'
 import hexagonoLaranja from '../../Assets/hexagonoLaranja.png'
 import hexagonoVerde from '../../Assets/hexagonoVerde.png'
@@ -11,16 +11,29 @@ export function AboutUs() {
         <div className='flex pt-1 pb-3 mb-3 lg:border-b-0'>
 
           <div className="self-start absolute ">
-            <div className="w-[100px] md:w-[180px] lg:w-[100px]">
-              <AnimatedOnScroll animationIn="pulse">
-                <img src={hexagonoLaranja} alt="" />
-              </AnimatedOnScroll>
-            </div>
+            <motion.div
+              className="w-[100px] md:w-[180px] lg:w-[100px]"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+              viewport={{ once: false }}
+            >
+              <img src={hexagonoLaranja} alt="" />
+            </motion.div>
           </div>
 
           <div className="m-auto lg:mx-auto sm:grid-cols-1 p-5 text-center lg:divide-y-0 lg:divide-x-2 divide-y-2 divide-x-0 divide-green-500">
             <div className='lg:w-[300px]'>
-              <AnimatedOnScroll animationIn="bounceInLeft">
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+                viewport={{ once: true }}
+              >
                 <div>
                   <img
                     src={iconFronteiraTec}
@@ -28,23 +41,37 @@ export function AboutUs() {
                     className="w-[200px] mx-auto md:w-[300px]"
                   />
                 </div>
-              </AnimatedOnScroll>
+              </motion.div>
             </div>
           </div>
           
           <div className="border-none self-end absolute right-0">
-            <div className="w-[100px] md:w-[180px] lg:w-[100px] xl:w-[200px]">
-              <AnimatedOnScroll animationIn="pulse">
-                <img src={hexagonoVerde} alt="" />
-              </AnimatedOnScroll>
-            </div>
+            <motion.div
+              className="w-[100px] md:w-[180px] lg:w-[100px] xl:w-[200px]"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+                delay: 0.5
+              }}
+              viewport={{ once: false }}
+            >
+              <img src={hexagonoVerde} alt="" />
+            </motion.div>
           </div>
 
           <div className='block lg:w-[2px] lg:h-full lg:bg-gradient-to-b from-green-fronteira to-orange-fronteira'></div>
         </div>
           <div>
             <div className="sm:ml-14 mt-5 p-2">
-              <AnimatedOnScroll animationIn="bounceInRight">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+                viewport={{ once: true }}
+              >
                 <div className="px-3">
                   <h1 className="text-4xl mb-5 text-green-fronteira">
                     A Fronteira <span className="font-bold">TEC</span>
@@ -72,12 +99,17 @@ export function AboutUs() {
                     </span>
                   </p>
                 </div>
-              </AnimatedOnScroll>
+              </motion.div>
             </div>
           </div>
 
       </div>
-      <AnimatedOnScroll animationIn="zoomInUp">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <div className="mt-5 flex items-center justify-center pl-5 pr-5">
           <div className="rounded-md bg-gradient-to-r from-orange-fronteira to-green-fronteira p-[2px] w-96 cursor-pointer group hover:scale-110 duration-150">
             <div className="flex h-full w-full items-center justify-center bg-white-fronteira back p-3 group-hover:bg-gradient-to-r from-orange-fronteira to-green-fronteira group-hover:text-white group-hover:font-bold">
@@ -85,7 +117,7 @@ export function AboutUs() {
             </div>
           </div>
         </div>
-      </AnimatedOnScroll>
+      </motion.div>
     </div>
   )
 }

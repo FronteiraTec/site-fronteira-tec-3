@@ -5,3 +5,32 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Swiper custom styles */
+.services-swiper .swiper-button-next,
+.services-swiper .swiper-button-prev {
+  color: #22c55e;
+}
+
+.services-swiper .swiper-button-next:hover,
+.services-swiper .swiper-button-prev:hover {
+  color: #f97316;
+}
+
+.services-swiper .swiper-pagination-bullet {
+  background: #22c55e;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  background: #f97316;
+}
+
+.dark .services-swiper .swiper-button-next,
+.dark .services-swiper .swiper-button-prev {
+  color: #4ade80;
+}
+
+.dark .services-swiper .swiper-button-next:hover,
+.dark .services-swiper .swiper-button-prev:hover {
+  color: #fb923c;
+}

@@ -31,7 +31,7 @@ export function Carousel() {
 
       <div className="carousel-inner relative w-full overflow-hidden">
         <div className="carousel-item active relative float-left bg-fronteira-tec1 w-full bg-cover bg-no-repeat h-screen"> {/* */}
-          <div className="mt-[350px] lg:mr-[100px] m-5 text-white lg:text-end text-center">
+          <div className="mt-[250px] lg:mt-[300px] lg:mr-[100px] m-5 text-white lg:text-end text-center">
             <div className="flex justify-end">
               <AnimatedOnScroll animationIn="zoomInRight">
                 <h1 className="lg:text-[40px] leading-none text-3xl font-normal lg:w-96 lg:text-end text-center">
@@ -42,51 +42,9 @@ export function Carousel() {
               </AnimatedOnScroll>
             </div>
 
-            <div>
+            <div className="flex lg:justify-end justify-center">
               <AnimatedOnScroll animationIn="zoomInUp">
                 <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-150">
-                  Saiba Mais<span className="ml-3">{'>'}</span>
-                </button>
-              </AnimatedOnScroll>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-item relative float-left w-full bg-fronteira-tec2 bg-cover bg-no-repeat h-screen">
-          <div className="mt-[350px] lg:mr-[100px] m-5 text-white lg:text-start text-center lg:ml-10">
-            <div className="flex justify-start">
-              <AnimatedOnScroll animationIn="zoomInLeft">
-                <h1 className="lg:text-[40px] leading-none text-3xl font-normal lg:w-96 sm:text-start text-center">
-                  Seu <span className="font-bold">Aplicativo Mobile</span> feito
-                  com <span className="font-bold"> Segurança</span> e
-                  <span className="font-bold"> Tecnologia</span>
-                </h1>
-              </AnimatedOnScroll>
-            </div>
-            <div>
-              <AnimatedOnScroll animationIn="zoomInUp">
-                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
-                  Saiba Mais<span className="ml-3">{'>'}</span>
-                </button>
-              </AnimatedOnScroll>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-item relative float-left w-full bg-fronteira-tec3 bg-cover bg-no-repeat h-screen">
-          <div className="mt-[350px] lg:mr-[100px] m-5 text-white text-center lg:ml-10">
-            <div className="flex justify-center">
-              <AnimatedOnScroll animationIn="zoomInUp">
-                <h1 className="lg:text-[40px] leading-none text-3xl font-normal lg:w-96 text-center">
-                  <span className="font-bold">Sistemas </span> desenvolvidos
-                  para <span className="font-bold"> Solucionar</span> o seu{' '}
-                  <span className="font-bold"> Desafio</span>
-                </h1>
-              </AnimatedOnScroll>
-            </div>
-            <div>
-              <AnimatedOnScroll animationIn="zoomInUp">
-                <button className="mt-[38px] lg:text-xl border border-gray-50 rounded-md p-3 hover:bg-white hover:text-black hover:border-none hover:scale-110 duration-100">
                   Saiba Mais<span className="ml-3">{'>'}</span>
                 </button>
               </AnimatedOnScroll>
